@@ -1,0 +1,9 @@
+e:\thaddeus\my documents\visual studio 2013\Projects\Database Analyzer\Database Analyzer\bin\Debug\Database Analyzer.exe.config
+e:\thaddeus\my documents\visual studio 2013\Projects\Database Analyzer\Database Analyzer\obj\Debug\Database Analyzer.csprojResolveAssemblyReference.cache
+e:\thaddeus\my documents\visual studio 2013\Projects\Database Analyzer\Database Analyzer\obj\Debug\Database_Analyzer.ControlPanel.resources
+e:\thaddeus\my documents\visual studio 2013\Projects\Database Analyzer\Database Analyzer\obj\Debug\Database_Analyzer.Properties.Resources.resources
+e:\thaddeus\my documents\visual studio 2013\Projects\Database Analyzer\Database Analyzer\obj\Debug\Database Analyzer.csproj.GenerateResource.Cache
+e:\thaddeus\my documents\visual studio 2013\Projects\Database Analyzer\Database Analyzer\bin\Debug\Database Analyzer.exe
+e:\thaddeus\my documents\visual studio 2013\Projects\Database Analyzer\Database Analyzer\bin\Debug\Database Analyzer.pdb
+e:\thaddeus\my documents\visual studio 2013\Projects\Database Analyzer\Database Analyzer\obj\Debug\Database Analyzer.exe
+e:\thaddeus\my documents\visual studio 2013\Projects\Database Analyzer\Database Analyzer\obj\Debug\Database Analyzer.pdb
