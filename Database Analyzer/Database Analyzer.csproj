@@ -50,6 +50,8 @@
     <Compile Include="ControlPanel.Designer.cs">
       <DependentUpon>ControlPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Functions\ComparisonFunctions.cs" />
+    <Compile Include="Functions\FileFunctions.cs" />
     <Compile Include="Functions\SQLFunctions.cs" />
     <Compile Include="Models\Connection.cs" />
     <Compile Include="Program.cs" />

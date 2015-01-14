@@ -7,3 +7,12 @@ e:\thaddeus\my documents\visual studio 2013\Projects\Database Analyzer\Database 
 e:\thaddeus\my documents\visual studio 2013\Projects\Database Analyzer\Database Analyzer\bin\Debug\Database Analyzer.pdb
 e:\thaddeus\my documents\visual studio 2013\Projects\Database Analyzer\Database Analyzer\obj\Debug\Database Analyzer.exe
 e:\thaddeus\my documents\visual studio 2013\Projects\Database Analyzer\Database Analyzer\obj\Debug\Database Analyzer.pdb
+E:\thaddeus\My Documents\GitHub\Database-Analyzer\Database Analyzer\bin\Debug\Database Analyzer.exe.config
+E:\thaddeus\My Documents\GitHub\Database-Analyzer\Database Analyzer\obj\Debug\Database Analyzer.exe
+E:\thaddeus\My Documents\GitHub\Database-Analyzer\Database Analyzer\obj\Debug\Database Analyzer.pdb
+E:\thaddeus\My Documents\GitHub\Database-Analyzer\Database Analyzer\bin\Debug\Database Analyzer.exe
+E:\thaddeus\My Documents\GitHub\Database-Analyzer\Database Analyzer\bin\Debug\Database Analyzer.pdb
+E:\thaddeus\My Documents\GitHub\Database-Analyzer\Database Analyzer\obj\Debug\Database Analyzer.csprojResolveAssemblyReference.cache
+E:\thaddeus\My Documents\GitHub\Database-Analyzer\Database Analyzer\obj\Debug\Database_Analyzer.ControlPanel.resources
+E:\thaddeus\My Documents\GitHub\Database-Analyzer\Database Analyzer\obj\Debug\Database_Analyzer.Properties.Resources.resources
+E:\thaddeus\My Documents\GitHub\Database-Analyzer\Database Analyzer\obj\Debug\Database Analyzer.csproj.GenerateResource.Cache

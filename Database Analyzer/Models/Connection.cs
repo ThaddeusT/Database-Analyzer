@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Database_Analyzer.Models
 {
+    [Serializable]
     public class Connection
     {
         #region Fields

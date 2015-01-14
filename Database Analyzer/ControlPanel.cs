@@ -24,6 +24,9 @@ namespace Database_Analyzer
         public ControlPanel()
         {
             InitializeComponent();
+            loadConfigurationToolStripMenuItem.Enabled = FileFunctions.ConfigurationFileExists();
+            Connection1 = new Connection();
+            Connection2 = new Connection();
         }
 
         private void TestConnection1_Click(object sender, EventArgs e)
@@ -45,11 +48,70 @@ namespace Database_Analyzer
             if (SQLFunctions.TestConnectionToDatabase(Connection2))
             {
                 MessageBox.Show("Test for Connection 2 Succeeded.");
+                if (SQLFunctions.TestConnectionToDatabase(Connection1))
+                {
+                    LoadTablesButton.Enabled = true;
+                }
+                else
+                {
+                    LoadTablesButton.Enabled = false;
+                }
             }
             else
             {
                 MessageBox.Show("Test for Connection 2 Failed.");
             }
         }
+
+        private void loadConfiguration_Click(object sender, EventArgs e)
+        {
+            List<Connection> connections = FileFunctions.LoadTestingConfiguaration(Connection1, Connection2);
+            Connection1.ConnectionString = connections[0].ConnectionString;
+            Connection2.ConnectionString = connections[1].ConnectionString;
+            connection1TextBox.Text = Connection1.ConnectionString;
+            connection2TextBox.Text = Connection2.ConnectionString;
+        }
+
+        private void saveConfiguation_Click(object sender, EventArgs e)
+        {
+            Connection1.ConnectionString = connection1TextBox.Text;
+            Connection2.ConnectionString = connection2TextBox.Text;
+            FileFunctions.CreateTestingConfigurationFile(Connection1, Connection2);
+            loadConfigurationToolStripMenuItem.Enabled = FileFunctions.ConfigurationFileExists();
+        }
+
+        private void LoadTablesButton_Click(object sender, EventArgs e)
+        {
+            List<String> TablesForConnection1 = SQLFunctions.LoadTablesForConnection(Connection1);
+            List<String> TablesForConnection2 = SQLFunctions.LoadTablesForConnection(Connection2);
+            foreach (String table in TablesForConnection1)
+            {
+                if (TablesForConnection2.Contains(table))
+                {
+                    TablesInBothDatabasesListBox.Items.Add(table, false);
+                }
+            }
+            TablesInBothDatabasesListBox.Visible = true;
+            TablesInBothDatabasesListBox.Enabled = true;
+        }
+
+        private void runComparison_Click(object sender, EventArgs e)
+        {
+            List<string> tables = TablesInBothDatabasesListBox.CheckedItems.Cast<string>().ToList();
+            comparisonList.Text = ComparisonFunctions.CompareDataBases(tables, new List<Connection>() { Connection1, Connection2 });
+        }
+
+        private void TablesInBothDatabasesListBox_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            if (TablesInBothDatabasesListBox.CheckedItems.Count == 1 && e.NewValue == CheckState.Unchecked)
+            {
+                runComparison.Enabled = false;
+            }
+            else
+            {
+                runComparison.Enabled = true;
+            }
+        }
+
     }
 }
